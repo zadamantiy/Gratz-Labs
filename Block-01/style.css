@@ -1,11 +1,11 @@
 ﻿@font-face {
     font-family: Evolve;
-    src: url("https://raw.githubusercontent.com/zadamantiy/Gratz-Labs/master/Block-01/Evolve_Sans_Light.otf?token=AgBxGRierdIx9mSuCRr14f3MxUEwryeHks5cd9r3wA%3D%3D") format("opentype");
+    src: url("https://raw.githubusercontent.com/zadamantiy/Gratz-Labs/master/Block-01/Evolve_Sans_Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("https://raw.githubusercontent.com/zadamantiy/Gratz-Labs/master/Block-01/Roboto-Light.ttf?token=AgBxGRB_H4V-EZqiLbCQpSOd573d1TOKks5cd9t0wA%3D%3D") format("truetype");
+    src: url("https://raw.githubusercontent.com/zadamantiy/Gratz-Labs/master/Block-01/Roboto-Light.ttf") format("truetype");
 }
 
 body {
