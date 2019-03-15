@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>POWER OF JS</title>
+
+<script language="javascript">
+	function onHover(obj) {
+		obj.src = "Button_hovered.png"
+	}
+	
+	function onOut(obj) {
+		obj.src = "Button.png"
+	}
+	
+	var img_prev = null
+	function onPressed(obj) {
+		img_prev = obj.src
+		obj.src = "Button_pressed.png"
+	}
+	
+	var z = 0;
+	function onReleased(obj) {
+		obj.src = img_prev
+		switch(z) {
+			case 0:
+				document.body.innerHTML += '<center>MORE!!!</center><center>FIRST</center>';
+				break;
+			case 1:
+				document.body.innerHTML += '<center>SECOND</center>';
+				break;
+			case 2:
+				document.body.innerHTML += '<center>' + 'FIRST' + 'SECOND' + '</center>';
+				break;
+			default:
+				document.body.innerHTML += '<center><img src="icon-terry.jpg"></img></center>';
+				break;
+		}
+		z++
+	}
+ </script>
+<body>
+	<center>
+		<img src="Main.png">
+		</img>
+	</center>
+	<center>
+		<img id="Class_button" src="Button.png" onmouseover="onHover(this);" onmouseout="onOut(this);" onmousedown="onPressed(this);" onmouseup="onReleased(this);">
+		</img>
+	</center>
+</body>
+</head>
+</html>
